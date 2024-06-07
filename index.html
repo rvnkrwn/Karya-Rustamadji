@@ -1,0 +1,145 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Karya Rustamadji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        img.img-gallery {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .gallery {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-auto-rows: 200px;
+            grid-auto-flow: dense;
+        }
+        .gallery > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .gallery > div > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .gallery .tall {
+            grid-row: span 2;
+        }
+    </style>
+</head>
+
+<body>
+<div class="loading-container">
+    <div class="loading-screen">
+    </div>
+</div>
+
+<div class="scrollTop fixed right-8 bottom-8 hidden">
+    <div onclick="scrollToTop()" class="cursor-pointer border-4 rounded-full w-10 h-10 bg-black/90 border-black flex justify-center items-center">
+        <img src="img/Up%20Arrow.png" alt="">
+    </div>
+</div>
+
+<header class="p-2">
+    <nav class="main-navigation container mx-auto py-4 px-6 rounded-xl ">
+        <ul class="flex justify-center gap-8 josefin-sans">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="masterpiece.html">Karya</a></li>
+            <li><a href="about.html">Tentang</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Better to wrap barba container as close as possible -->
+<div data-barba="wrapper" class="p-2">
+    <!-- Only this section changes on link navigation -->
+    <main data-barba="container" data-barba-namespace="home">
+        <div class="container mx-auto py-2 px-8 mt-20 md:mt-0 flex flex-col-reverse gap-4 rounded-xl  md:flex-row md:h-[90vh] md:items-center">
+            <div class="text-center md:text-start">
+                <div class="mx-auto font-black flex items-center gap-4">
+                    <hr class="w-full border-2 border-black/50 md:hidden">
+                    <p class="w-full josefin-sans md:w-fit">Karya Rustamadji</p>
+                    <hr class="w-full md:w-32 border-2 border-black/50">
+                </div>
+                <p class="text-md md:text-2xl lg:text-4xl lg:w-3/4">Jelajahi warisan artistik Rustamadji, di mana setiap goresan kuas menghidupkan cerita dan budaya Indonesia yang kaya dan mendalam.</p>
+                <br>
+                <div>
+                    <button onclick="scrollToSection('tentangku')" class="border py-2 px-4 mx-auto rounded-md transition hover:shadow hover:border-black">Tentang Saya</button>
+                    <button onclick="scrollToSection('karyaku')" class="border py-2 px-4 mx-auto rounded-md transition bg-black text-white shadow border-black hover:bg-transparent hover:text-black hover:border hover:shadow-none">Jelajah Karya</button>
+                </div>
+            </div>
+            <div class="w-40 h-40 overflow-hidden rounded-full mx-auto shadow border border-r-8 border-b-8 border-black md:min-w-80 md:w-2/4 md:h-auto">
+                <img src="/img/foto1.jpeg" alt="">
+            </div>
+        </div>
+        <div id="tentangku" class="container mx-auto p-6 flex items-center min-h-screen">
+            <div class="w-full p-8 border border-r-8 border-b-8 border-black flex flex-col gap-4">
+                <h1 class="text-center josefin-sans text-3xl p-4">Ringkasan TentangKu</h1>
+                <p class="text-center w-11/12 mx-auto">
+                    Rustamadji dilahirkan di Klaten, Jawa Tengah pada tanggal 19 Januari 1921. Memulai karier melukis sejak tahun 1938 yang ditempuh dengan cara belajar sendiri. Tahun 1942 - 1947, ia bermukim di kota Malang, Jawa Timur. Dalam tahun 1948 s/d 1955 tinggal di Yogyakarta dan bergabung dengan kawan-kawannya seperti S. Soedjojono, Batara Lubis, Hendra Gunawan almarhum, Soedarso dan lainnya dalam sebuah sanggar. Pada tahun 1952, bersama dengan kawan lainnya mengadakan pameran keliling Indonesia atas sponsor Departemen Pendidikan dan Kebudayaan Republik Indonesia, kemudian tahun 1956 sampai dengan 1968 bersama keluarganya bermukim di Jakarta.
+                </p>
+                <a href="about.html" class="border py-2 px-4 mx-auto rounded-md transition bg-black text-white shadow border-black hover:bg-transparent hover:text-black hover:border hover:shadow-none">Baca Lebih</a>
+            </div>
+        </div>
+        <div id="karyaku" class="container mx-auto p-6 flex items-center min-h-screen">
+            <div class="w-full p-8 border border-r-8 border-b-8 border-black flex flex-col gap-4">
+                <h1 class="text-center josefin-sans text-3xl p-4">Ringkasan KaryaKu</h1>
+                <div class="gallery grid gap-4 grid-cols-3">
+                    <div class="image-container tall">
+                        <img class="img-gallery" src="img/lukisan/1.jpeg" alt="">
+                    </div>
+                    <div class="image-container tall">
+                        <img class="img-gallery" src="img/lukisan/2.jpeg" alt="">
+                    </div>
+                    <div class="image-container">
+                        <img class="img-gallery" src="img/lukisan/3.jpeg" alt="">
+                    </div>
+                    <div class="image-container ">
+                        <img class="img-gallery" src="img/lukisan/4.jpeg" alt="">
+                    </div>
+                </div>
+                <a href="masterpiece.html" class="border py-2 px-4 mx-auto rounded-md transition bg-black text-white shadow border-black hover:bg-transparent hover:text-black hover:border hover:shadow-none">Lihat Lebih</a>
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer>
+    <div class="container mx-auto p-6 flex items-center min-h-[10vh]">
+        <div class="w-full p-8 text-center josefin-sans border border-r-8 border-b-8 border-black">
+            <h1 class=" text-2xl p-4">Karya Rustamadji</h1>
+            <p>Copyright &copy; 2024 - All right reserved by Karya Rustamadji.</p>
+            <small>Build with ❤️</small>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<!-- Barba Core -->
+<script src="https://unpkg.com/@barba/core"></script>
+
+<!-- GSAP for animation -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+<!-- Some basic helper functions -->
+<script src="js/helper.js"></script>
+
+<!-- Main JS file -->
+<script src="js/main.js"></script>
+
+
+</html>
