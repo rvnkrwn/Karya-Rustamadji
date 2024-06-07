@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         img.img-gallery {
             max-width: 100%;
@@ -45,13 +47,13 @@
 </div>
 
 <div class="scrollTop fixed right-8 bottom-8 hidden">
-    <div onclick="scrollToTop()" class="cursor-pointer border-4 rounded-full w-10 h-10 bg-black/90 border-black flex justify-center items-center">
+    <div onclick="scrollToTop()" class="cursor-pointer border-4 rounded-full w-10 h-10 bg-blue-500/90 border-blue-200 flex justify-center items-center">
         <img src="img/Up%20Arrow.png" alt="">
     </div>
 </div>
 
 <header class="p-2">
-    <nav class="main-navigation container mx-auto py-4 px-6 rounded-xl ">
+    <nav class="main-navigation container mx-auto py-5 px-6 rounded-xl bg-blue-400 text-white">
         <ul class="flex justify-center gap-8 josefin-sans">
             <li><a href="index.html">Beranda</a></li>
             <li><a href="masterpiece.html">Karya</a></li>
@@ -68,52 +70,116 @@
             <div class="w-full p-8 flex flex-col gap-4">
                 <h1 class="text-center josefin-sans text-3xl p-4">KaryaKu</h1>
                 <div class="gallery grid gap-4 grid-cols-3">
-                    <div class="image-container">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100"
+                            class="image-container">
                         <img class="img-gallery" src="img/lukisan/1.jpeg" alt="">
                     </div>
-                    <div class="image-container">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="200"
+                            class="image-container">
                         <img class="img-gallery" src="img/lukisan/2.jpeg" alt="">
                     </div>
-                    <div class="image-container tall">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="300"
+                            class="image-container tall">
                         <img class="img-gallery" src="img/lukisan/3.jpeg" alt="">
                     </div>
-                    <div class="image-container tall">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="400"
+                            class="image-container tall">
                         <img class="img-gallery" src="img/lukisan/4.jpeg" alt="">
                     </div>
-                    <div class="image-container">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="500"
+                            class="image-container">
                         <img class="img-gallery" src="img/lukisan/1.jpeg" alt="">
                     </div>
-                    <div class="image-container">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100"
+                            class="image-container">
                         <img class="img-gallery" src="img/lukisan/2.jpeg" alt="">
                     </div>
-                    <div class="image-container tall">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="200"
+                            class="image-container tall">
                         <img class="img-gallery" src="img/lukisan/3.jpeg" alt="">
                     </div>
-                    <div class="image-container tall">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="300"
+                            class="image-container tall">
                         <img class="img-gallery" src="img/lukisan/4.jpeg" alt="">
                     </div>
-                    <div class="image-container">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="400"
+                            class="image-container">
                         <img class="img-gallery" src="img/lukisan/1.jpeg" alt="">
                     </div>
-                    <div class="image-container">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="500"
+                            class="image-container">
                         <img class="img-gallery" src="img/lukisan/2.jpeg" alt="">
                     </div>
-                    <div class="image-container tall">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100"
+                            class="image-container tall">
                         <img class="img-gallery" src="img/lukisan/3.jpeg" alt="">
                     </div>
-                    <div class="image-container tall">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="200"
+                            class="image-container tall">
                         <img class="img-gallery" src="img/lukisan/4.jpeg" alt="">
                     </div>
-                    <div class="image-container">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="300"
+                            class="image-container">
                         <img class="img-gallery" src="img/lukisan/1.jpeg" alt="">
                     </div>
-                    <div class="image-container tall">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="400"
+                            class="image-container tall">
                         <img class="img-gallery" src="img/lukisan/2.jpeg" alt="">
                     </div>
-                    <div class="image-container tall">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="500"
+                            class="image-container tall">
                         <img class="img-gallery" src="img/lukisan/3.jpeg" alt="">
                     </div>
-                    <div class="image-container ">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100"
+                            class="image-container ">
                         <img class="img-gallery" src="img/lukisan/4.jpeg" alt="">
                     </div>
                 </div>
@@ -124,9 +190,9 @@
 
 <footer>
     <div class="container mx-auto p-6 flex items-center min-h-[10vh]">
-        <div class="w-full p-8 text-center josefin-sans border border-r-8 border-b-8 border-black">
-            <h1 class=" text-2xl p-4">Karya Rustamadji</h1>
-            <p>Copyright &copy; 2024 - All right reserved by Karya Rustamadji.</p>
+        <div class="w-full p-8 text-center josefin-sans border border-r-8 border-b-8 border-blue-200">
+            <h1 class="text-lg p-4">Karya Rustamadji</h1>
+            <p class="text-sm">Copyright &copy; 2024 - All right reserved by Karya Rustamadji.</p>
             <small>Build with ❤️</small>
         </div>
     </div>

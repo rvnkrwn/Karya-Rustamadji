@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         img.img-gallery {
             max-width: 100%;
@@ -45,13 +47,13 @@
 </div>
 
 <div class="scrollTop fixed right-8 bottom-8 hidden">
-    <div onclick="scrollToTop()" class="cursor-pointer border-4 rounded-full w-10 h-10 bg-black/90 border-black flex justify-center items-center">
+    <div onclick="scrollToTop()" class="cursor-pointer border-4 rounded-full w-10 h-10 bg-blue-500/90 border-blue-200 flex justify-center items-center">
         <img src="img/Up%20Arrow.png" alt="">
     </div>
 </div>
 
 <header class="p-2">
-    <nav class="main-navigation container mx-auto py-4 px-6 rounded-xl ">
+    <nav class="main-navigation container mx-auto py-5 px-6 rounded-xl bg-blue-400 text-white">
         <ul class="flex justify-center gap-8 josefin-sans">
             <li><a href="index.html">Beranda</a></li>
             <li><a href="masterpiece.html">Karya</a></li>
@@ -65,9 +67,9 @@
     <!-- Only this section changes on link navigation -->
     <main data-barba="container" data-barba-namespace="home">
         <div id="tentangku" class="container mx-auto p-6 flex items-center min-h-screen">
-            <div class="w-full p-8 border border-r-8 border-b-8 border-black flex flex-col gap-4">
-                <h1 class="text-center josefin-sans text-3xl p-4">Ringkasan TentangKu</h1>
-                <p class="text-center w-11/12 mx-auto">
+            <div class="w-full p-8 border border-r-8 border-b-8 border-blue-200 flex flex-col gap-4">
+                <h1 data-aos="zoom-in" class="text-center josefin-sans text-3xl p-4">Ringkasan TentangKu</h1>
+                <p data-aos="zoom-out-up" class="text-center w-11/12 mx-auto">
                     Rustamadji lahir di Klaten, Jawa Tengah, pada 19 Januari 1921. Ia memulai karier melukisnya pada tahun 1938 secara otodidak. Antara tahun 1942 dan 1947, Rustamadji tinggal di Malang, Jawa Timur. Pada tahun 1948 hingga 1955, ia tinggal di Yogyakarta dan bergabung dengan seniman lain seperti S. Soedjojono, Batara Lubis, Hendra Gunawan almarhum, Soedarso, dan lainnya dalam sebuah sanggar. Pada tahun 1952, bersama teman-temannya, ia mengadakan pameran keliling Indonesia dengan sponsor dari Departemen Pendidikan dan Kebudayaan Republik Indonesia. Kemudian, pada tahun 1956 hingga 1968, ia dan keluarganya menetap di Jakarta.
                     <br>
                     <br>
@@ -89,9 +91,9 @@
 
 <footer>
     <div class="container mx-auto p-6 flex items-center min-h-[10vh]">
-        <div class="w-full p-8 text-center josefin-sans border border-r-8 border-b-8 border-black">
-            <h1 class=" text-2xl p-4">Karya Rustamadji</h1>
-            <p>Copyright &copy; 2024 - All right reserved by Karya Rustamadji.</p>
+        <div class="w-full p-8 text-center josefin-sans border border-r-8 border-b-8 border-blue-200">
+            <h1 class="text-lg p-4">Karya Rustamadji</h1>
+            <p class="text-sm">Copyright &copy; 2024 - All right reserved by Karya Rustamadji.</p>
             <small>Build with ❤️</small>
         </div>
     </div>

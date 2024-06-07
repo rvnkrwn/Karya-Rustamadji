@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         img.img-gallery {
             max-width: 100%;
@@ -45,13 +47,13 @@
 </div>
 
 <div class="scrollTop fixed right-8 bottom-8 hidden">
-    <div onclick="scrollToTop()" class="cursor-pointer border-4 rounded-full w-10 h-10 bg-black/90 border-black flex justify-center items-center">
+    <div onclick="scrollToTop()" class="cursor-pointer border-4 rounded-full w-10 h-10 bg-blue-500/90 border-blue-200 flex justify-center items-center">
         <img src="img/Up%20Arrow.png" alt="">
     </div>
 </div>
 
 <header class="p-2">
-    <nav class="main-navigation container mx-auto py-4 px-6 rounded-xl ">
+    <nav class="main-navigation container mx-auto py-5 px-6 rounded-xl bg-blue-400 text-white">
         <ul class="flex justify-center gap-8 josefin-sans">
             <li><a href="index.html">Beranda</a></li>
             <li><a href="masterpiece.html">Karya</a></li>
@@ -67,48 +69,67 @@
         <div class="container mx-auto py-2 px-8 mt-20 md:mt-0 flex flex-col-reverse gap-4 rounded-xl  md:flex-row md:h-[90vh] md:items-center">
             <div class="text-center md:text-start">
                 <div class="mx-auto font-black flex items-center gap-4">
-                    <hr class="w-full border-2 border-black/50 md:hidden">
-                    <p class="w-full josefin-sans md:w-fit">Karya Rustamadji</p>
-                    <hr class="w-full md:w-32 border-2 border-black/50">
+                    <hr class="w-full border-2 border-blue-200/50 md:hidden">
+                    <p data-aos="fade-up"
+                       data-aos-anchor-placement="center-bottom"
+                       data-aos-delay="100"
+                       class="w-full josefin-sans md:w-fit" >Karya Rustamadji</p>
+                    <hr class="w-full md:w-32 border-2 border-blue-200/50">
                 </div>
-                <p class="text-md md:text-2xl lg:text-4xl lg:w-3/4">Jelajahi warisan artistik Rustamadji, di mana setiap goresan kuas menghidupkan cerita dan budaya Indonesia yang kaya dan mendalam.</p>
+                <p data-aos="fade-left" data-aos-delay="400" class="text-md md:text-2xl lg:text-4xl lg:w-3/4">Jelajahi warisan artistik Rustamadji, di mana setiap goresan kuas menghidupkan cerita dan budaya Indonesia yang kaya dan mendalam.</p>
                 <br>
                 <div>
-                    <button onclick="scrollToSection('tentangku')" class="border py-2 px-4 mx-auto rounded-md transition hover:shadow hover:border-black">Tentang Saya</button>
-                    <button onclick="scrollToSection('karyaku')" class="border py-2 px-4 mx-auto rounded-md transition bg-black text-white shadow border-black hover:bg-transparent hover:text-black hover:border hover:shadow-none">Jelajah Karya</button>
+                    <button data-aos="fade-right" data-aos-delay="200" onclick="scrollToSection('tentangku')" class="border py-2 px-4 mx-auto rounded-md transition hover:shadow hover:border-blue-200">Tentang Saya</button>
+                    <button data-aos="fade-left" data-aos-delay="200" onclick="scrollToSection('karyaku')" class="border py-2 px-4 mx-auto rounded-md transition bg-blue-400 text-white shadow border-blue-200 hover:bg-transparent hover:text-black hover:border hover:shadow-none">Jelajah Karya</button>
                 </div>
             </div>
-            <div class="w-40 h-40 overflow-hidden rounded-full mx-auto shadow border border-r-8 border-b-8 border-black md:min-w-80 md:w-2/4 md:h-auto">
+            <div data-aos="flip-right" class="w-40 h-40 overflow-hidden rounded-full mx-auto shadow border border-r-8 border-b-8 border-blue-200 md:min-w-80 md:w-2/4 md:h-auto">
                 <img src="/img/foto1.jpeg" alt="">
             </div>
         </div>
         <div id="tentangku" class="container mx-auto p-6 flex items-center min-h-screen">
-            <div class="w-full p-8 border border-r-8 border-b-8 border-black flex flex-col gap-4">
-                <h1 class="text-center josefin-sans text-3xl p-4">Ringkasan TentangKu</h1>
-                <p class="text-center w-11/12 mx-auto">
+            <div class="w-full p-8 border border-r-8 border-b-8 border-blue-200 flex flex-col gap-4">
+                <h1 data-aos="zoom-in" class="text-center josefin-sans text-3xl p-4">Ringkasan TentangKu</h1>
+                <p data-aos="zoom-out-up" class="text-center w-11/12 mx-auto">
                     Rustamadji dilahirkan di Klaten, Jawa Tengah pada tanggal 19 Januari 1921. Memulai karier melukis sejak tahun 1938 yang ditempuh dengan cara belajar sendiri. Tahun 1942 - 1947, ia bermukim di kota Malang, Jawa Timur. Dalam tahun 1948 s/d 1955 tinggal di Yogyakarta dan bergabung dengan kawan-kawannya seperti S. Soedjojono, Batara Lubis, Hendra Gunawan almarhum, Soedarso dan lainnya dalam sebuah sanggar. Pada tahun 1952, bersama dengan kawan lainnya mengadakan pameran keliling Indonesia atas sponsor Departemen Pendidikan dan Kebudayaan Republik Indonesia, kemudian tahun 1956 sampai dengan 1968 bersama keluarganya bermukim di Jakarta.
                 </p>
-                <a href="about.html" class="border py-2 px-4 mx-auto rounded-md transition bg-black text-white shadow border-black hover:bg-transparent hover:text-black hover:border hover:shadow-none">Baca Lebih</a>
+                <a href="about.html" class="border py-2 px-4 mx-auto rounded-md transition bg-blue-400 text-white shadow border-blue-200 hover:bg-transparent hover:text-black hover:border hover:shadow-none">Baca Lebih</a>
             </div>
         </div>
         <div id="karyaku" class="container mx-auto p-6 flex items-center min-h-screen">
-            <div class="w-full p-8 border border-r-8 border-b-8 border-black flex flex-col gap-4">
-                <h1 class="text-center josefin-sans text-3xl p-4">Ringkasan KaryaKu</h1>
+            <div class="w-full p-8 border border-r-8 border-b-8 border-blue-200 flex flex-col gap-4">
+                <h1 data-aos="zoom-in" class="text-center josefin-sans text-3xl p-4">Ringkasan KaryaKu</h1>
                 <div class="gallery grid gap-4 grid-cols-3">
-                    <div class="image-container tall">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100"
+                            class="image-container tall">
                         <img class="img-gallery" src="img/lukisan/1.jpeg" alt="">
                     </div>
-                    <div class="image-container tall">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="200"
+                            class="image-container tall">
                         <img class="img-gallery" src="img/lukisan/2.jpeg" alt="">
                     </div>
-                    <div class="image-container">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="300"
+                            class="image-container">
                         <img class="img-gallery" src="img/lukisan/3.jpeg" alt="">
                     </div>
-                    <div class="image-container ">
+                    <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="400"
+                            class="image-container ">
                         <img class="img-gallery" src="img/lukisan/4.jpeg" alt="">
                     </div>
                 </div>
-                <a href="masterpiece.html" class="border py-2 px-4 mx-auto rounded-md transition bg-black text-white shadow border-black hover:bg-transparent hover:text-black hover:border hover:shadow-none">Lihat Lebih</a>
+                <a href="masterpiece.html" class="border py-2 px-4 mx-auto rounded-md transition bg-blue-400 text-white shadow border-blue-200 hover:bg-transparent hover:text-black hover:border hover:shadow-none">Lihat Lebih</a>
             </div>
         </div>
     </main>
@@ -116,9 +137,9 @@
 
 <footer>
     <div class="container mx-auto p-6 flex items-center min-h-[10vh]">
-        <div class="w-full p-8 text-center josefin-sans border border-r-8 border-b-8 border-black">
-            <h1 class=" text-2xl p-4">Karya Rustamadji</h1>
-            <p>Copyright &copy; 2024 - All right reserved by Karya Rustamadji.</p>
+        <div class="w-full p-8 text-center josefin-sans border border-r-8 border-b-8 border-blue-200">
+            <h1 class="text-lg p-4">Karya Rustamadji</h1>
+            <p class="text-sm">Copyright &copy; 2024 - All right reserved by Karya Rustamadji.</p>
             <small>Build with ❤️</small>
         </div>
     </div>
@@ -140,6 +161,5 @@
 
 <!-- Main JS file -->
 <script src="js/main.js"></script>
-
 
 </html>
