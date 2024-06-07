@@ -6,8 +6,6 @@ website: karanmhatre.com
 
 ================= */
 
-AOS.init();
-
 // Better to traverse the DOM thenleast possible
 // you can use `var` instead of `const` for legacy browser support
 const loadingScreen = document.querySelector('.loading-screen')
