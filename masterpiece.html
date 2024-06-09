@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>Karya Rustamadji</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <link href="css/main.css" rel="stylesheet">
+    <meta content="no-cache, must-revalidate" http-equiv="Cache-Control">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
@@ -17,6 +17,7 @@
             vertical-align: middle;
             display: inline-block;
         }
+
         .gallery {
             display: grid;
             grid-gap: 10px;
@@ -24,17 +25,20 @@
             grid-auto-rows: 200px;
             grid-auto-flow: dense;
         }
+
         .gallery > div {
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         .gallery > div > img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             border-radius: 5px;
         }
+
         .gallery .tall {
             grid-row: span 2;
         }
@@ -53,14 +57,15 @@
 </div>
 
 <div class="scrollTop fixed right-5 bottom-16 hidden z-[9999]">
-    <div onclick="scrollToTop()" class="cursor-pointer border-4 rounded-full w-10 h-10 bg-blue-500/90 border-blue-200 flex justify-center items-center">
-        <img src="img/Up%20Arrow.png" alt="">
+    <div class="cursor-pointer border-4 rounded-full w-10 h-10 bg-blue-500/90 border-blue-200 flex justify-center items-center"
+         onclick="scrollToTop()">
+        <img alt="" src="img/Up%20Arrow.png">
     </div>
 </div>
 
 <div class="contact fixed right-4 bottom-4 z-[9999]">
     <a href="https://wa.me/+6281227936933?text=Hallo%20Karya%20Rustamadji">
-        <img src="/img/WhatsApp.png" alt="">
+        <img alt="" src="/img/WhatsApp.png">
     </a>
 </div>
 
@@ -75,16 +80,305 @@
 </header>
 
 <!-- Better to wrap barba container as close as possible -->
-<div data-barba="wrapper" class="p-2">
+<div class="p-2" data-barba="wrapper">
     <!-- Only this section changes on link navigation -->
     <main data-barba="container" data-barba-namespace="home">
-        <div id="karyaku" class="container mx-auto p-2 flex items-center min-h-screen">
+        <div class="container mx-auto p-2 flex items-center min-h-screen" id="karyaku">
             <div class="w-full p-4 flex flex-col gap-4">
                 <h1 class="text-center josefin-sans text-3xl p-4 mb-10 flex flex-col items-center">
                     <span>KaryaKu</span>
                     <hr class="border-2 w-32 border-blue-400">
                 </h1>
                 <div class="gallery grid gap-4 grid-cols-3">
+                    <div
+                            class="image-container tall"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100">
+                        <img alt="" class="img-gallery" src="img/lukisan/1.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Air Terjun 1962</strong>
+                            <p>144 x 195</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="200">
+                        <img alt="" class="img-gallery" src="img/lukisan/2.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Bromo 1993</strong>
+                            <p>195 x 195</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container tall"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="300">
+                        <img alt="" class="img-gallery" src="img/lukisan/3.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Pisang</strong>
+                            <p>110 x 155</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container tall"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100">
+                        <img alt="" class="img-gallery" src="img/lukisan/4.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Bunga Bangkai 1994</strong>
+                            <p>140 x 200</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="200">
+                        <img alt="" class="img-gallery" src="img/lukisan/5.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Menjaring Matahari 1988</strong>
+                            <p>100 x 80</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="300">
+                        <img alt="" class="img-gallery" src="img/lukisan/6.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Pemandangan Jateng 1982</strong>
+                            <p>290 x 140</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container tall"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100">
+                        <img alt="" class="img-gallery" src="img/lukisan/7.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Menunggui Tukang Patri 1998</strong>
+                            <p>98 x 140</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="200">
+                        <img alt="" class="img-gallery" src="img/lukisan/8.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Candi Prambanan 1988</strong>
+                            <p>170 x 150</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="300">
+                        <img alt="" class="img-gallery" src="img/lukisan/9.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Rembang tebu 1987</strong>
+                            <p>200 x 140</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container tall"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100">
+                        <img alt="" class="img-gallery" src="img/lukisan/10.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Pohon Pisang di sudut Rumah 1980</strong>
+                            <p>90 x 120</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="200">
+                        <img alt="" class="img-gallery" src="img/lukisan/11.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>alam benda</strong>
+                            <p>100 x 90</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="300">
+                        <img alt="" class="img-gallery" src="img/lukisan/12.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Mengolah Tanah 1984</strong>
+                            <p>143 x 108</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100">
+                        <img alt="" class="img-gallery" src="img/lukisan/13.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Telaga Sarangan 1961</strong>
+                            <p>200 x 140</p>
+                        </div>
+                    </div>
+
+
+                    <!--                    Repeat-->
+                    <div
+                            class="image-container tall"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100">
+                        <img alt="" class="img-gallery" src="img/lukisan/1.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Air Terjun 1962</strong>
+                            <p>144 x 195</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="200">
+                        <img alt="" class="img-gallery" src="img/lukisan/2.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Bromo 1993</strong>
+                            <p>195 x 195</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container tall"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="300">
+                        <img alt="" class="img-gallery" src="img/lukisan/3.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Pisang</strong>
+                            <p>110 x 155</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container tall"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100">
+                        <img alt="" class="img-gallery" src="img/lukisan/4.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Bunga Bangkai 1994</strong>
+                            <p>140 x 200</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="200">
+                        <img alt="" class="img-gallery" src="img/lukisan/5.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Menjaring Matahari 1988</strong>
+                            <p>100 x 80</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="300">
+                        <img alt="" class="img-gallery" src="img/lukisan/6.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Pemandangan Jateng 1982</strong>
+                            <p>290 x 140</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container tall"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100">
+                        <img alt="" class="img-gallery" src="img/lukisan/7.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Menunggui Tukang Patri 1998</strong>
+                            <p>98 x 140</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="200">
+                        <img alt="" class="img-gallery" src="img/lukisan/8.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Candi Prambanan 1988</strong>
+                            <p>170 x 150</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="300">
+                        <img alt="" class="img-gallery" src="img/lukisan/9.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Rembang tebu 1987</strong>
+                            <p>200 x 140</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container tall"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100">
+                        <img alt="" class="img-gallery" src="img/lukisan/10.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Pohon Pisang di sudut Rumah 1980</strong>
+                            <p>90 x 120</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="200">
+                        <img alt="" class="img-gallery" src="img/lukisan/11.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>alam benda</strong>
+                            <p>100 x 90</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="300">
+                        <img alt="" class="img-gallery" src="img/lukisan/12.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Mengolah Tanah 1984</strong>
+                            <p>143 x 108</p>
+                        </div>
+                    </div>
+                    <div
+                            class="image-container"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay="100">
+                        <img alt="" class="img-gallery" src="img/lukisan/13.jpeg">
+                        <div class="absolute bottom-0 bg-black/20 backdrop-blur w-full p-2 text-white text-center text-xs md:text-sm">
+                            <strong>Telaga Sarangan 1961</strong>
+                            <p>200 x 140</p>
+                        </div>
+                    </div>
                     <div
                             data-aos="fade-up"
                             data-aos-anchor-placement="top-bottom"
@@ -237,6 +531,10 @@
     <img src="/img/wave.svg" alt="" class="absolute">
     <img src="/img/wave1.svg" alt="" class="opacity-60">
 </div>
+<div class="waves bottom-0 left-0 rotate-180">
+    <img src="/img/wave.svg" alt="" class="absolute">
+    <img src="/img/wave1.svg" alt="" class="opacity-60">
+</div>
 <footer>
     <div class="container mx-auto p-6 flex items-center min-h-[10vh]">
         <div class="w-full p-8 text-center josefin-sans border border-r-8 border-b-8 border-blue-200">
@@ -250,13 +548,14 @@
 </body>
 
 <!-- JQuery -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script crossorigin="anonymous"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 <!-- Barba Core -->
 <script src="https://unpkg.com/@barba/core"></script>
 
 <!-- GSAP for animation -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js" type="text/javascript"></script>
 
 <!-- Some basic helper functions -->
 <script src="js/helper.js"></script>
