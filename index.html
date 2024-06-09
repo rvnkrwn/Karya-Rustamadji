@@ -36,7 +36,6 @@
             min-width: 100%;
             min-height: 100%;
             object-fit: cover;
-            border-radius: 100%;
         }
 
         .autoplay-progress {
@@ -132,10 +131,10 @@
 </header>
 
 <!-- Better to wrap barba container as close as possible -->
-<div data-barba="wrapper" class="p-2">
+<div data-barba="wrapper">
     <!-- Only this section changes on link navigation -->
     <main data-barba="container" data-barba-namespace="home">
-        <div class="container mx-auto py-2 px-8 mt-20 md:mt-0 flex flex-col-reverse gap-4 rounded-xl  md:flex-row md:h-[90vh] md:items-center">
+        <div class="container mx-auto py-2 px-8 md:mt-0 flex flex-col-reverse gap-4 rounded-xl  md:flex-row md:h-[90vh] md:items-center">
             <div class="text-center md:text-start">
                 <div class="mx-auto font-black flex items-center gap-4">
                     <hr class="w-full border-2 border-blue-200/50 md:hidden">
@@ -152,27 +151,34 @@
                     <button data-aos="fade-left" data-aos-delay="200" onclick="scrollToSection('karyaku')" class="border py-2 px-4 mx-auto rounded-md transition bg-blue-400 text-white shadow border-blue-200 hover:bg-transparent hover:text-black hover:border hover:shadow-none">Jelajah Karya</button>
                 </div>
             </div>
-            <div data-aos="flip-right" class="w-52 h-80 overflow-hidden mx-auto rounded-xl md:min-w-80 md:w-2/4 md:h-auto p-4 border border-b-8 border-r-8 border-blue-200">
+            <div data-aos="flip-right" class="w-52 h-80 overflow-hidden mx-auto rounded-xl md:min-w-80 md:w-2/4 md:h-auto p-4 ">
                 <swiper-container class="mySwiper" space-between="30"
                                   centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
                     <swiper-slide>
                         <img src="/img/foto1.jpeg" alt="">
                     </swiper-slide>
                     <swiper-slide>
-                        <img src="/img/lukisan/7.jpeg" alt="">
+                        <img src="/img/foto2.jpeg" alt="">
                     </swiper-slide>
                     <swiper-slide>
-                        <img src="/img/lukisan/3.jpeg" alt="">
+                        <img src="/img/foto3.jpeg" alt="">
                     </swiper-slide>
                     <swiper-slide>
-                        <img src="/img/lukisan/4.jpeg" alt="">
+                        <img src="/img/foto4.jpeg" alt="">
                     </swiper-slide>
                     <div class="autoplay-progress" slot="container-end">
                         <span></span>
                     </div>
                 </swiper-container>
             </div>
-
+        </div>
+        <div class="waves bottom-0 left-0 md:-mt-56">
+            <img src="/img/wave.svg" alt="" class="absolute">
+            <img src="/img/wave1.svg" alt="" class="opacity-60">
+        </div>
+        <div class="waves bottom-0 left-0 rotate-180">
+            <img src="/img/wave.svg" alt="" class="absolute">
+            <img src="/img/wave1.svg" alt="" class="opacity-60">
         </div>
         <div id="tentangku" class="container mx-auto p-6 flex items-center min-h-screen">
             <div class="w-full p-8 border border-r-8 border-b-8 border-blue-200 flex flex-col gap-4">
