@@ -10,7 +10,64 @@
     <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <style>
+        swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        swiper-slide img {
+            display: block;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+
+        .autoplay-progress {
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            z-index: 10;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--swiper-theme-color);
+        }
+
+        .autoplay-progress svg {
+            --progress: 0;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            stroke-width: 4px;
+            stroke: var(--swiper-theme-color);
+            fill: none;
+            stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+            stroke-dasharray: 125.6;
+            transform: rotate(-90deg);
+        }
         img.img-gallery {
             max-width: 100%;
             height: auto;
@@ -65,7 +122,7 @@
 </div>
 
 <header class="p-2">
-    <nav class="main-navigation container mx-auto py-5 px-6 rounded-xl bg-blue-400 text-white">
+    <nav class="main-navigation container mx-auto py-5 px-6 rounded-xl border border-blue-400 shadow-lg shadow-blue-400 hover:bg-blue-400 hover:text-white hover:shadow-none">
         <ul class="flex justify-center gap-8 josefin-sans">
             <li><a href="index.html">Beranda</a></li>
             <li><a href="masterpiece.html">Karya</a></li>
@@ -95,9 +152,27 @@
                     <button data-aos="fade-left" data-aos-delay="200" onclick="scrollToSection('karyaku')" class="border py-2 px-4 mx-auto rounded-md transition bg-blue-400 text-white shadow border-blue-200 hover:bg-transparent hover:text-black hover:border hover:shadow-none">Jelajah Karya</button>
                 </div>
             </div>
-            <div data-aos="flip-right" class="w-40 h-40 overflow-hidden rounded-full mx-auto shadow border border-r-8 border-b-8 border-blue-200 md:min-w-80 md:w-2/4 md:h-auto">
-                <img src="/img/foto1.jpeg" alt="">
+            <div data-aos="flip-right" class="w-52 h-80 overflow-hidden mx-auto rounded-xl md:min-w-80 md:w-2/4 md:h-auto p-4 border border-b-8 border-r-8 border-blue-200">
+                <swiper-container class="mySwiper" space-between="30"
+                                  centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                    <swiper-slide>
+                        <img src="/img/foto1.jpeg" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="/img/lukisan/7.jpeg" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="/img/lukisan/3.jpeg" alt="">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="/img/lukisan/4.jpeg" alt="">
+                    </swiper-slide>
+                    <div class="autoplay-progress" slot="container-end">
+                        <span></span>
+                    </div>
+                </swiper-container>
             </div>
+
         </div>
         <div id="tentangku" class="container mx-auto p-6 flex items-center min-h-screen">
             <div class="w-full p-8 border border-r-8 border-b-8 border-blue-200 flex flex-col gap-4">
@@ -189,7 +264,20 @@
 
 <!-- Main JS file -->
 <script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
+<!-- Initialize Swiper -->
+<script>
+		const progressCircle = document.querySelector(".autoplay-progress svg");
+		const progressContent = document.querySelector(".autoplay-progress span");
+
+		const swiperEl = document.querySelector("swiper-container");
+		swiperEl.addEventListener("autoplaytimeleft", (e) => {
+				const [time, progress] = e.detail;
+				progressCircle.style.setProperty("--progress", 1 - progress);
+				progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+		});
+</script>
 <script>
 		AOS.init();
 </script>
